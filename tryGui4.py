@@ -179,7 +179,7 @@ class Window(QtGui.QDialog):
           self.bx = self.figure.add_subplot(2,1,2)
           self.bx.specgram(signalData,NFFT = 512, noverlap = 256, Fs=samplingFrequency,cmap = plt.cm.get_cmap("jet"))
           self.bx.set_xlabel('Time (s)')
-          self.bx.set_ylabel('Frequency')
+          self.bx.set_ylabel('Frequency (Hz)')
           self.figure.subplots_adjust(hspace=0.5)
           # refreshs canvas
           self.canvas.draw()
